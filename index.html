@@ -2,103 +2,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Fernanda Pugliero</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fefefe;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background-color: #f4f4f4;
-      padding: 2em;
+      background-color: #002f6c;
+      color: white;
+      padding: 50px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.5rem;
     }
     header p {
-      font-size: 1.2em;
-      color: #666;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     section {
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 0 1em;
+      margin-bottom: 50px;
     }
     h2 {
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: .3em;
+      color: #002f6c;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
     .skills, .brands {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 1em;
+      margin-top: 20px;
     }
     .skills span, .brands span {
-      background-color: #eee;
-      padding: 0.5em 1em;
+      background-color: #e0e0e0;
+      padding: 10px 20px;
       border-radius: 20px;
       font-weight: bold;
     }
     footer {
       text-align: center;
-      padding: 2em;
-      font-size: 0.9em;
-      background-color: #f4f4f4;
-      color: #888;
-    }
-    .social {
-      margin-top: 1em;
+      padding: 40px 20px;
+      background-color: #002f6c;
+      color: white;
     }
     .social a {
+      color: #fff;
       margin: 0 10px;
       text-decoration: none;
-      color: #1a73e8;
+      font-weight: bold;
+    }
+    .social a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Fernanda Pugliero</h1>
     <p>Product Manager based in Berlin</p>
   </header>
 
-  <section>
-    <h2>Sobre mim</h2>
-    <p>Sou gerente de produto com foco em produtos digitais e inovação. Tenho experiência em coordenação de projetos, pesquisa e conteúdo. Meu background em jornalismo e habilidades de comunicação complementam meu trabalho em tecnologia. Falo português, inglês e alemão.</p>
-  </section>
+  <main>
+    <section>
+      <h2>Sobre mim</h2>
+      <p>Sou gerente de produto com foco em produtos digitais e inovação. Tenho experiência em coordenação de projetos, pesquisa e conteúdo. Meu background em jornalismo e habilidades de comunicação complementam meu trabalho em tecnologia. Falo português, inglês e alemão.</p>
+    </section>
 
-  <section>
-    <h2>O que eu posso fazer</h2>
-    <div class="skills">
-      <span>DIGITAL PRODUCT</span>
-      <span>PROJECT MANAGEMENT</span>
-      <span>RESEARCH</span>
-      <span>COMMUNICATION</span>
-      <span>UX WRITING</span>
-      <span>AI CONTENT</span>
-    </div>
-  </section>
+    <section>
+      <h2>O que eu posso fazer</h2>
+      <div class="skills">
+        <span>DIGITAL PRODUCT</span>
+        <span>PROJECT MANAGEMENT</span>
+        <span>RESEARCH</span>
+        <span>COMMUNICATION</span>
+        <span>UX WRITING</span>
+        <span>AI CONTENT</span>
+      </div>
+    </section>
 
-  <section>
-    <h2>Já trabalhei com</h2>
-    <div class="brands">
-      <span>Marca 1</span>
-      <span>Marca 2</span>
-      <span>Marca 3</span>
-      <span>Marca 4</span>
-      <span>Marca 5</span>
-      <span>Marca 6</span>
-    </div>
-  </section>
+    <section>
+      <h2>Já trabalhei com</h2>
+      <div class="brands">
+        <span>Marca 1</span>
+        <span>Marca 2</span>
+        <span>Marca 3</span>
+        <span>Marca 4</span>
+        <span>Marca 5</span>
+        <span>Marca 6</span>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Made with ❤️ in Berlin</p>
@@ -107,5 +117,6 @@
       <a href="https://www.instagram.com/fernandapugliero/" target="_blank">Instagram</a>
     </div>
   </footer>
+
 </body>
 </html>
