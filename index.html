@@ -20,14 +20,20 @@
       color: #111111;
       line-height: 1.6;
       padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 900px;
-      margin: 0 auto 4rem;
+      margin-bottom: 4rem;
     }
 
     nav a {
@@ -42,13 +48,20 @@
     }
 
     section {
-      max-width: 900px;
-      margin: 0 auto 4rem;
+      margin-bottom: 4rem;
     }
 
     h1, h2 {
       font-weight: 600;
       margin-bottom: 1rem;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
     }
 
     .contact a {
@@ -68,27 +81,35 @@
         margin-left: 0;
         margin-right: 1rem;
       }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div><strong>Fernanda Pugliero</strong></div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div><strong>Fernanda Pugliero</strong></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-  <section id="home">
-    <h1>Olá, eu sou a Fernanda</h1>
-    <p>Esse é um espaço para compartilhar um pouco do meu trabalho e minhas ideias. Em breve mais novidades por aqui!</p>
-  </section>
+    <section id="home">
+      <img src="foto.jpg" alt="Foto de Fernanda Pugliero" class="profile-pic">
+      <h1>Olá, eu sou a Fernanda</h1>
+      <p>Esse é um espaço para compartilhar um pouco do meu trabalho e minhas ideias. Em breve mais novidades por aqui!</p>
+    </section>
 
-  <section id="contato" class="contact">
-    <h2>Contato</h2>
-    <p>Entre em contato comigo por e-mail:</p>
-    <a href="mailto:email@exemplo.com">email@exemplo.com</a>
-  </section>
+    <section id="contato" class="contact">
+      <h2>Contato</h2>
+      <p>Entre em contato comigo por e-mail:</p>
+      <a href="mailto:email@exemplo.com">email@exemplo.com</a>
+    </section>
+  </div>
 </body>
 </html>
