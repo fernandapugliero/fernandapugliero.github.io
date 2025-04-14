@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,12 +8,7 @@
   <link rel="icon" href="https://fav.farm/👩🏽‍💻" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #ffffff;
@@ -22,41 +18,37 @@
       display: flex;
       justify-content: center;
     }
-
     .container {
       width: 100%;
       max-width: 800px;
     }
-
     header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       margin-bottom: 4rem;
       position: relative;
     }
-
+    .logo {
+      font-weight: 600;
+    }
     nav {
       display: flex;
+      gap: 2rem;
     }
-
     nav a {
-      margin-left: 2rem;
       text-decoration: none;
       color: #111;
       font-weight: 600;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
     .menu-toggle {
       display: none;
       flex-direction: column;
       cursor: pointer;
     }
-
     .bar {
       height: 3px;
       width: 25px;
@@ -64,29 +56,19 @@
       margin: 4px 0;
       transition: 0.4s;
     }
-
-    .mobile-header {
-      display: none;
-    }
-
     @media (max-width: 600px) {
       header {
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .mobile-header {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
       }
-
+      .logo {
+        order: 1;
+      }
       .menu-toggle {
         display: flex;
+        order: 2;
       }
-
       nav {
         display: none;
         flex-direction: column;
@@ -98,22 +80,18 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         width: 100%;
       }
-
       nav.active {
         display: flex;
       }
-
       nav a {
         margin: 0.5rem 0;
       }
     }
-
     h1 {
       text-align: center;
       margin-bottom: 2rem;
       font-weight: 600;
     }
-
     p {
       text-align: center;
     }
@@ -122,37 +100,31 @@
 <body>
   <div class="container">
     <header>
-      <div class="mobile-header">
-        <div class="menu-toggle" onclick="toggleMenu()" id="menu-icon">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
+      <div class="logo">Fernanda Pugliero</div>
+      <div class="menu-toggle" onclick="toggleMenu()" id="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
       <nav id="menu">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
       </nav>
     </header>
-
     <main>
       <h1>Projects</h1>
       <p>Coming soon.</p>
     </main>
   </div>
-
   <script>
     function toggleMenu() {
       const menu = document.getElementById('menu');
       const icon = document.getElementById('menu-icon');
       menu.classList.toggle('active');
       icon.classList.toggle('open');
-
-      if (icon.classList.contains('open')) {
-        icon.innerHTML = '&times;';
-      } else {
-        icon.innerHTML = '<div class="bar"></div><div class="bar"></div><div class="bar"></div>';
-      }
+      icon.innerHTML = icon.classList.contains('open') 
+        ? '&times;' 
+        : '<div class="bar"></div><div class="bar"></div><div class="bar"></div>';
     }
   </script>
 </body>
