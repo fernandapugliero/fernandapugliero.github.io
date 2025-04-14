@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fernanda Pugliero</title>
-  <link rel="icon" href="https://fav.farm/👩‍💻" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Projects – Fernanda Pugliero</title>
+  <link rel="icon" href="https://fav.farm/👩🏽‍💻" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -67,9 +65,22 @@
       transition: 0.4s;
     }
 
+    .mobile-header {
+      display: none;
+    }
+
     @media (max-width: 600px) {
       header {
         justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
       }
 
       .menu-toggle {
@@ -97,51 +108,14 @@
       }
     }
 
-    section {
-      margin-bottom: 4rem;
-    }
-
-    h1, h2 {
-      font-weight: 600;
-      margin-bottom: 1rem;
+    h1 {
       text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
     }
 
     p {
       text-align: center;
-    }
-
-    .home-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: top center;
-      margin-bottom: 1.5rem;
-    }
-
-    .mobile-header {
-      display: none;
-    }
-
-    @media (max-width: 600px) {
-      .mobile-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-      }
-
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
     }
   </style>
 </head>
@@ -161,16 +135,10 @@
       </nav>
     </header>
 
-    <section id="home" class="home-content">
-      <img src="./fernanda_pugliero.jpg" alt="Foto de Fernanda Pugliero" class="profile-pic">
-      <h1>Fernanda Pugliero</h1>
-      <p>Hi, I'm Fernanda Pugliero – someone who finds joy in building, creating, and learning along the way. I am a Product Manager based in Berlin. Whether it's through design, code, or conversation, I care about thoughtful details and human-centered experiences.<br><br>This space is a reflection of things I care about and projects I’ve enjoyed. Thanks for stopping by — more coming soon.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can find me on <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/seu-perfil" target="_blank">Instagram</a>.</p>
-    </section>
+    <main>
+      <h1>Projects</h1>
+      <p>Coming soon.</p>
+    </main>
   </div>
 
   <script>
