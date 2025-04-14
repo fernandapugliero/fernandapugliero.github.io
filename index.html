@@ -32,7 +32,7 @@
 
     header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       margin-bottom: 4rem;
       position: relative;
@@ -68,6 +68,10 @@
     }
 
     @media (max-width: 600px) {
+      header {
+        justify-content: space-between;
+      }
+
       .menu-toggle {
         display: flex;
       }
@@ -123,10 +127,21 @@
     }
 
     .mobile-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -134,7 +149,6 @@
   <div class="container">
     <header>
       <div class="mobile-header">
-        <div><strong>Fernanda Pugliero</strong></div>
         <div class="menu-toggle" onclick="toggleMenu()" id="menu-icon">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -155,7 +169,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>You can reach me via email at: <a href="mailto:email@exemplo.com">email@exemplo.com</a></p>
+      <p>You can find me on <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/seu-perfil" target="_blank">Instagram</a>.</p>
     </section>
   </div>
 
